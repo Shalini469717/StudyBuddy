@@ -45,7 +45,7 @@ app.post('/music', (request, response) => {
             "port": null,
             "path": encodeURI("/v1/search?term=" + song),
             "headers": {
-                "X-RapidAPI-Key": "c6508df8d2msh28c51d25a65f866p1c9b1ajsn7ff5b8b72944",
+                "X-RapidAPI-Key": "YOUR_RAPID_API_KEY",
                 "X-RapidAPI-Host": "spotify-scraper.p.rapidapi.com",
                 "useQueryString": true
             }
@@ -83,7 +83,7 @@ app.post('/doubts', (request, response) => {
         "path": "/chat/completions",
         "headers": {
             "content-type": "application/json",
-            "X-RapidAPI-Key": "c6508df8d2msh28c51d25a65f866p1c9b1ajsn7ff5b8b72944",
+            "X-RapidAPI-Key": "YOUR_RAPID_API_KEY",
             "X-RapidAPI-Host": "openai80.p.rapidapi.com",
             "useQueryString": true
         }
