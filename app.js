@@ -6,7 +6,7 @@ const http = require("https");
 const _ = require('lodash');
 const router = express.Router();
 let app = express();
-app.use('/.netlify/functions/api',router);
+
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
@@ -113,5 +113,5 @@ app.post('/doubts', (request, response) => {
 app.get('/subscription',(req,res) =>{
     res.render('subscription')
 })
+app.use('/.netlify/functions/api', router);
 module.exports.handler = serverless(app);
-app.listen(3000, () => { console.log("Listening at port 30000") })
