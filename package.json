@@ -1,0 +1,17 @@
+{
+  "name": "study_timer",
+  "version": "1.0.0",
+  "description": "An application where you can use a timer, listen to music and get your doubts clarified.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shalini_Muskula",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21"
+  }
+}

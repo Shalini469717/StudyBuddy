@@ -1,0 +1,20 @@
+<%- include('header'); -%>
+    <link rel="stylesheet" href="homepage.css">
+
+    </head>
+
+    <body>
+        <%- include('navbar'); -%>
+            <section class="hidden ">
+                <p class="text-light text-center mt-5 h1">Use timer to monitor!</p>
+            </section>
+            <div class="text-center mt-5 p-5">
+                <p class="text-light d-5 h1 mb-5"><span id="seconds">00</span>:<span id="tens">00</span></p>
+                <button id="button-start" class="btn btn-light mb-5">Start</button>
+                <button id="button-stop" class="btn btn-light mb-5">Stop</button>
+                <button id="button-reset" class="btn btn-light mb-5">Reset</button>
+            </div>
+            
+<script src="animation.js"></script>
+<script src = "timer.js"></script>       
+<%- include('footer'); -%>

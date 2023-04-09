@@ -1,0 +1,46 @@
+
+<%- include('header'); -%>
+<link rel="stylesheet" href="music.css">
+</head>
+
+<body >
+    <%- include('navbar'); -%>
+    <section class="hidden ">
+        <h1 class="text-light text-center m-5">Hit up your favourite song using Spotify <i class="fa-brands fa-spotify"></i></h1>
+    </section>
+    <section>
+
+        <form action='/music' method="post" class="col-lg-6 mx-auto">
+            <div class="mb-3 text-light">
+                <label for="searchBar" class="form-label">Song</label>
+                <input type="text" class="form-control " id="searchBar" aria-describedby="emailHelp" name="search">
+                <div id="emailHelp" class="form-text text-light">Enter the song you want to search</div>
+            </div>
+        </form>
+    </section>
+    <section class="text-center mx-auto p-5">
+        <table class="m-5 table-responsive-md table-light table-hover text-center bg-dark text-light table-bordered">
+            <h3 class="text-light"><%= tableHeading %></h3>
+            <tr>
+                <th scope="col" class="p-5">Name</th>
+                <th scope="col" class="p-5">Player</th>
+            </tr>
+            <% data.forEach((song)=> { %>
+                <tr>
+                    <td >
+                        <%= song.name %>
+                    </td>
+                    <td>
+                        <% let url="https://open.spotify.com/embed/album/" + song.id %>
+                            <div style="display: flex; align-content: center; justify-content: center;" class="p-5">
+                                <iframe src="<%= url %>" width="529" height="80" frameborder="0" allowtransparency="true"
+                                    allow="encrypted-media">
+                                </iframe>
+                            </div>
+                    </td>
+                </tr>
+                <%})%>
+        </table>
+    </section>
+    <script src="animation.js"></script>
+<%- include('footer'); -%>

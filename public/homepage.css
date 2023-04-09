@@ -1,0 +1,25 @@
+body{
+    background-image: url('./images/back.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+    background-attachment: fixed;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-80%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.table{
+    border-color: aliceblue;
+    line-height: 10%;
+}
