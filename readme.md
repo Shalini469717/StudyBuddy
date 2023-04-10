@@ -6,3 +6,4 @@ Your API key is the X-RapidAPI-Key
 
 4.add your api_key to app.js
 5.Run using node app.js
+6. Happy developing!
