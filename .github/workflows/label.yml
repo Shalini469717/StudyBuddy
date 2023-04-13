@@ -1,0 +1,11 @@
+- name: EddieHubCommunity labels Action
+  # You may pin to the exact commit or the version.
+  # uses: EddieHubCommunity/gh-action-open-source-labels@6cb429e713e8e0b3ed6dda57c60e1abaa07d7dc9
+  uses: EddieHubCommunity/gh-action-open-source-labels@v0.1.1
+  with:
+    # GitHub token for repo
+    github-token: ${{ secrets.GITHUB_TOKEN }}
+    # Onwer name is user or organisation
+    owner-name: 'Shalini469717'
+    # GitHub repo name
+    repository-name: 'Unwind'
